@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    
+    background-color: rgb(251, 222, 227);
+}
+
+#header {
+    background-image: url(../img/pokemon-g902703c9d_640.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+#header h1 {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+nav button {
+    width: 100px;
+    margin: 0 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: black 2px 2px 5px;
+    background-color: aqua;
+}
+nav button:hover{
+    cursor: pointer;
+}
+.loader{
+    
+   display: none;
+}
+.loader img{
+    width: 75px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.active{
+    display: contents;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    min-height: 80vh;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+main .card {
+    width: 20rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: whitesmoke    ;
+    
+}
+
+main .card h3 {
+    text-align: center;
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+main .card p {
+    text-align: center;
+    color: blue;
+    background-color: lightgray;
+}
+
+
+main .card img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    max-height: 150px;
+    /* min-width: 30px;
+    max-width: 24rem; */
+
+}
+
+main .pError {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: red;
+}
+
+footer {
+    height: 3rem;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+footer a:hover {
+    font-size: 2rem;
+    color: blue;
+    transition: 0.5s;
+}
